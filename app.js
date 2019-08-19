@@ -6,6 +6,8 @@ var logger = require('morgan');
 var {Pool,Client} = require('pg');
 var passport = require('passport');
 var dotenv = require('dotenv');
+const flash = require('connect-flash');
+const session = require('express-session');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
